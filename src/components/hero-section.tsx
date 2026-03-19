@@ -35,16 +35,7 @@ const HeroSection = () => {
     <section className="relative z-20 isolate overflow-hidden w-full min-h-screen text-white flex flex-col bg-[#0a1329]">
       {/* Solid dark blue base so hero is always dark (with or without video/image) */}
       <div className="absolute inset-0 z-0 bg-[#0a1329]">
-        <Image
-          src="/assets/hero-bg.jpg"
-          alt="Hero background — modern data center with blue lighting"
-          fill
-          className="object-cover"
-          priority
-          onError={(e) => {
-            (e.currentTarget as HTMLImageElement).style.display = "none";
-          }}
-        />
+       
         {/* Background video — muted autoplay; sits above image so it’s visible */}
         <video
           autoPlay
