@@ -1,0 +1,220 @@
+@import "tailwindcss";
+
+:root {
+  /* ── IT Services Brand Palette ── */
+  --color-white: #FFFFFF;
+  --color-off-white: #F4F7FB;
+  --color-light-blue: #F4F7FB;
+  --color-dark-blue: #0a1329;
+  --color-mid-blue: #0f172a;
+  --color-accent-teal: #0D9488;
+  --color-accent-teal-hover: #0F766E;
+  /* Indigo palette (headings, buttons, states) */
+  --color-indigo-dark: #25285e;
+  --color-indigo-mid: #2c3071;
+  --color-indigo-bright: #3a4096;
+  --color-text-primary: #1E293B;
+  --color-text-secondary: #64748B;
+  --color-border: #E2E8F0;
+  --color-card-bg: #FFFFFF;
+
+  /* ── Tailwind semantic aliases ── */
+  --background: #FFFFFF;
+  --foreground: #1E293B;
+  --color-light: #F4F7FB;
+  --color-dark: #0a1329;
+  --color-deep-black: #0a1329;
+  --color-charcoal: #0a1329;
+
+  /* Primary = dark navy (main) */
+  --color-primary: #0a1329;
+  --color-secondary: #0f172a;
+  --color-primary-hover: #0f172a;
+
+  /* Lines / borders (navy) */
+  --color-line-primary: #0a1329;
+  --color-line-secondary: #1e293b;
+
+  /* Card icon tints (neutral / navy) */
+  --color-icon-primary: #f1f5f9;
+  --color-icon-secondary: #e2e8f0;
+
+  /* Dark card / FAQ / stats backgrounds */
+  --color-card-background: #0a1329;
+  --color-faq-background: #0a1329;
+  --color-stats-background: #0a1329;
+
+  /* Text */
+  --color-heading: #1E293B;
+  --color-subtext: #64748B;
+
+  /* Footer */
+  --color-footer-background-primary: #0a1329;
+  --color-footer-background-secondary: #0a1329;
+
+  /* Status */
+  --color-success: #22C55E;
+  --color-danger: #EF4444;
+
+  /* Toggles */
+  --color-background-enable: #0a1329;
+  --color-background-disable: #334155;
+
+  /* Legacy case-study tokens kept for potential reuse */
+  --color-swivu-primary: #0192F8;
+  --color-swivu-secondary: #0AE4FE;
+  --color-swivu-tertiary: #1B2A42;
+  --color-swivu-stats: #006DBA;
+  --color-swivu-text-primary: #ffffff;
+  --color-swivu-key-result-bg: #F0F9FF;
+  --color-why-section-border: #E2E8F0;
+}
+
+/* ── Tailwind theme mapping ── */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-light: var(--color-light);
+  --color-dark: var(--color-dark);
+  --color-deep-black: var(--color-deep-black);
+  --color-charcoal: var(--color-charcoal);
+  --color-white: var(--color-white);
+  --color-off-white: var(--color-off-white);
+  --color-light-blue: var(--color-light-blue);
+  --color-dark-blue: var(--color-dark-blue);
+  --color-accent-teal: var(--color-accent-teal);
+  --color-accent-teal-hover: var(--color-accent-teal-hover);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-border: var(--color-border);
+  --font-sans: var(--font-jakarta);
+  --color-indigo-dark: var(--color-indigo-dark);
+  --color-indigo-mid: var(--color-indigo-mid);
+  --color-indigo-bright: var(--color-indigo-bright);
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-line-primary: var(--color-line-primary);
+  --color-line-secondary: var(--color-line-secondary);
+  --color-icon-primary: var(--color-icon-primary);
+  --color-icon-secondary: var(--color-icon-secondary);
+  --color-card-background: var(--color-card-background);
+  --color-faq-background: var(--color-faq-background);
+  --color-stats-background: var(--color-stats-background);
+  --color-background-enable: var(--color-background-enable);
+  --color-background-disable: var(--color-background-disable);
+  --color-heading: var(--color-heading);
+  --color-subtext: var(--color-subtext);
+  --color-success: var(--color-success);
+  --color-danger: var(--color-danger);
+  --color-footer-background-primary: var(--color-footer-background-primary);
+  --color-footer-background-secondary: var(--color-footer-background-secondary);
+  --color-swivu-primary: var(--color-swivu-primary);
+  --color-swivu-secondary: var(--color-swivu-secondary);
+  --color-swivu-tertiary: var(--color-swivu-tertiary);
+  --color-swivu-stats: var(--color-swivu-stats);
+  --color-swivu-text-primary: var(--color-swivu-text-primary);
+  --color-swivu-key-result-bg: var(--color-swivu-key-result-bg);
+  --color-why-section-border: var(--color-why-section-border);
+}
+
+/* ── Utilities ── */
+@utility no-scrollbar {
+  scrollbar-width: none;
+  -moz-scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ── Base ── */
+html,
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-jakarta), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* ── Swiper overrides (kept for FAQ / testimonial sliders) ── */
+.testimonials-swiper-container .swiper-wrapper {
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: height;
+}
+.testimonials-swiper-container .swiper {
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: height;
+}
+.implementation-swiper.swiper {
+  overflow: hidden;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.implementation-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: opacity 0.4s ease;
+}
+@media (min-width: 640px) {
+  .implementation-swiper.swiper {
+    overflow: visible;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.implementation-swiper .swiper-slide-active {
+  z-index: 50;
+}
+
+/* ── Component layer ── */
+@layer components {
+  .marquee-mask {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+
+  .marquee-track {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: max-content;
+    animation: marquee 40s linear infinite;
+  }
+
+  .marquee-paused {
+    animation-play-state: paused;
+  }
+
+  @keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-33.3333%); }
+  }
+
+  @keyframes float-animate {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-40px); }
+    100% { transform: translateY(0px); }
+  }
+
+  .float-animate {
+    animation: float-animate 3s ease-in-out infinite;
+  }
+
+  /* Counter animation */
+  @keyframes count-up {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .count-up {
+    animation: count-up 0.6s ease-out forwards;
+  }
+}
+
+/* reCAPTCHA badge z-index */
+.grecaptcha-badge {
+  z-index: 10000 !important;
+}
