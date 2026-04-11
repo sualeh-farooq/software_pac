@@ -39,7 +39,7 @@ const NetworkProcessSection = () => {
           <div className="flex items-center gap-4">
             <span className="h-px w-12 bg-white" />
             <span
-              className="text-[15px] font-semibold tracking-widest"
+              className="text-[11px] md:text-[15px] font-semibold tracking-widest"
               style={{
                 background: "linear-gradient(135deg, #C477EA, #6F54F4)",
                 WebkitBackgroundClip: "text",
@@ -67,7 +67,7 @@ const NetworkProcessSection = () => {
 
           {/* Background dashes */}
           <div>
-            <Image src={backbone_dashes} alt="" className="absolute  -top-20 left-1/2 w-[70%] transform -translate-x-1/2 pointer-events-none " />
+            <Image src={backbone_dashes} alt="" className="hidden md:block absolute -top-20 left-1/2 w-[70%] transform -translate-x-1/2 pointer-events-none" />
           </div>
           <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative max-w-[1380px] z-10 mx-auto px-5">
             {STEPS.map((step, i) => (

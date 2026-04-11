@@ -106,7 +106,7 @@ export default function ChallengesIntroSection() {
             <div className="flex items-center justify-center gap-6 mb-5"  data-aos="fade-up"
     >
           <span className="w-18 h-px bg-white/80"></span>
-          <span className="text-[18px] font-semibold"
+          <span className="text-[12px] md:text-[18px] font-semibold"
                 style={{
                   background: "linear-gradient(135deg, #C477EA, #6F54F4)",
                   WebkitBackgroundClip: "text",
