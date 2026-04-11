@@ -36,7 +36,7 @@ const NetworkProcessSection = () => {
         {/* Heading */}
         <div className="flex flex-col items-center text-center gap-5 mb-16" data-aos="fade-up">
           {/* Label with lines */}
-            <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4">
             <span className="h-px w-12 bg-white" />
             <span
               className="text-[15px] font-semibold tracking-widest"
@@ -64,57 +64,57 @@ const NetworkProcessSection = () => {
         {/* Steps */}
         <div className="relative ">
 
-      
-        {/* Background dashes */}
-        <div>
-          <Image src={backbone_dashes} alt="" className="hidden md:block absolute -top-20 left-1/2 w-[70%] transform -translate-x-1/2 pointer-events-none" />
-        </div>
-         <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative max-w-[1380px] z-10 mx-auto px-5">
-  {STEPS.map((step, i) => (
-    <div
-      key={step.number}
-      className="flex flex-col items-center mt-4 h-full"
-      data-aos="fade-up"
-      data-aos-delay={i * 100}
-    >
-      {/* Number circle */}
-      <div
-        className="flex h-14 w-14 items-center justify-center rounded-full mb-[-28px] z-10 relative"
-        style={{
-          background: "linear-gradient(135deg, #C477EA, #6F54F4)",
-        }}
-      >
-        <span className="text-base font-extrabold text-white">
-          {step.number}
-        </span>
-      </div>
 
-      {/* Gradient Border Wrapper */}
-      <div className="rounded-2xl p-[1px] bg-gradient-to-l from-white/60 to-white/10 h-full">
-        
-        {/* Card */}
-        <div className="w-full rounded-2xl bg-[#0e1220] pt-10  pb-6 px-7 text-center h-full flex flex-col justify-center">
-          
-          <h3
-            className="text-[28px] font-bold mb-3"
-          style={{
-              background: "linear-gradient(135deg, #C477EA, #6F54F4)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }}
-          >
-            {step.title}
-          </h3>
+          {/* Background dashes */}
+          <div>
+            <Image src={backbone_dashes} alt="" className="absolute  -top-20 left-1/2 w-[70%] transform -translate-x-1/2 pointer-events-none " />
+          </div>
+          <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative max-w-[1380px] z-10 mx-auto px-5">
+            {STEPS.map((step, i) => (
+              <div
+                key={step.number}
+                className="flex flex-col items-center mt-4 h-full"
+                data-aos="fade-up"
+                data-aos-delay={i * 100}
+              >
+                {/* Number circle */}
+                <div
+                  className="flex h-14 w-14 items-center justify-center rounded-full mb-[-28px] z-10 relative"
+                  style={{
+                    background: "linear-gradient(135deg, #C477EA, #6F54F4)",
+                  }}
+                >
+                  <span className="text-base font-extrabold text-white">
+                    {step.number}
+                  </span>
+                </div>
 
-          <p className="text-[16px] text-[#EBEBEB] ">
-            {step.description}
-          </p>
+                {/* Gradient Border Wrapper */}
+                <div className="rounded-2xl p-[1px] bg-gradient-to-l from-white/60 to-white/10 h-full">
 
-        </div>
-      </div>
-    </div>
-  ))}
-</div>
+                  {/* Card */}
+                  <div className="w-full rounded-2xl bg-[#0e1220] pt-10  pb-6 px-7 text-center h-full flex flex-col justify-center">
+
+                    <h3
+                      className="text-[28px] font-bold mb-3"
+                      style={{
+                        background: "linear-gradient(135deg, #C477EA, #6F54F4)",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                      }}
+                    >
+                      {step.title}
+                    </h3>
+
+                    <p className="text-[16px] text-[#EBEBEB] ">
+                      {step.description}
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
       </div>

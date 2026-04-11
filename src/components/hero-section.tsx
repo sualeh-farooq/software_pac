@@ -181,31 +181,27 @@ const HeroSection = () => {
         <div className="w-full max-w-[1200px] px-6 pt-10 md:pt-16 xl:pt-20 pb-10 md:pb-16 text-center">
 
           {/* Badge */}
-          <div className="mb-4 mt-4 md:mt-6 inline-flex items-center rounded-full border border-white/20 bg-white/5 backdrop-blur-sm px-3 md:px-5 py-1.5 shadow-sm"  data-aos="fade-up"
-     data-aos-duration="3000">
+          <div className="mb-4 mt-4 md:mt-6 inline-flex items-center rounded-full border border-white/20 bg-white/5 backdrop-blur-sm px-3 md:px-5 py-1.5 shadow-sm" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
             <span className="text-[10px] md:text-[12px] font-semibold text-white tracking-[0.1rem] uppercase">
               Managed IT &amp; Network Services
             </span>
           </div>
 
           {/* Headline */}
-          <h1 className="text-[clamp(28px,5vw,61px)] w-full font-bold leading-[1.15] tracking-[-0.02em] text-white"  data-aos="fade-up"
-     data-aos-duration="3000">
+          <h1 className="text-[clamp(28px,5vw,61px)] w-full font-bold leading-[1.15] tracking-[-0.02em] text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
             Empowering Your Business<br />
             With Seamless Technology<br />
             Solutions
           </h1>
 
           {/* Description */}
-          <p className="text-[13px] md:text-[15px] xl:text-[16px] text-[#EBEBEB] leading-relaxed max-w-[700px] mx-auto mb-6 md:mb-8 mt-4 md:mt-6"  data-aos="fade-up"
-     data-aos-duration="3000">
+          <p className="text-[13px] md:text-[15px] xl:text-[16px] text-[#EBEBEB] leading-relaxed max-w-[700px] mx-auto mb-6 md:mb-8 mt-4 md:mt-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
             Your technology should work for you — not the other way around. We deliver managed IT and network services that keep your business
             running securely, efficiently, and confidently in an ever-changing digital landscape.
           </p>
 
           {/* CTA Button */}
-          <div className="flex justify-center mb-6 md:mb-12"  data-aos="fade-up"
-     data-aos-duration="3000">
+          <div className="flex justify-center mb-6 md:mb-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
             <Link
               href="/services"
               className="inline-flex items-center justify-center text-white font-bold tracking-[0.05em] transition-all duration-300 hover:opacity-90 hover:scale-[1.02] rounded-full px-6 py-3 md:px-8 md:py-6 text-[12px] md:text-[14px]"
@@ -222,8 +218,7 @@ const HeroSection = () => {
         </div>
 
         {/* Stats */}
-        <div className="w-full max-w-[1800px] mx-auto px-6 md:px-12 xl:px-16 pb-12 md:pb-20"  data-aos="fade-up"
-     data-aos-duration="2000">
+        <div className="w-full max-w-[1800px] mx-auto px-6 md:px-12 xl:px-16 pb-12 md:pb-20" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
           <div className="w-full h-px bg-white/30 mb-8 md:mb-12" />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-16 text-center">
             {STATS.map((s) => (

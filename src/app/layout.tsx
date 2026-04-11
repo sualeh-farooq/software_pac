@@ -7,7 +7,7 @@ import { ToastContainer } from "react-toastify";
 import { metaDescription, metaTitle } from "@/constants/metadata.constants";
 
 export const metadata: Metadata = {
-  metadataBase: `${process.env.NEXT_PUBLIC_APP_URL}`,
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"),
   title: metaTitle,
   description: metaDescription,
   openGraph: {
