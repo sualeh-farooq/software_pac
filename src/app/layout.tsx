@@ -1,19 +1,10 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import ScrollToTop from "@/components/scroll-to-top";
 import AosProvider from "@/components/aos-provider";
 import { ToastContainer } from "react-toastify";
 import { metaDescription, metaTitle } from "@/constants/metadata.constants";
-
-const plusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-jakarta",
-});
-
-
 
 export const metadata: Metadata = {
   metadataBase: `${process.env.NEXT_PUBLIC_APP_URL}`,
@@ -47,7 +38,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={`${plusJakartaSans.className} antialiased`}
+        className="antialiased bg-[#00050F]"
         suppressHydrationWarning={true}
       >
         <div className="z-10000 relative">

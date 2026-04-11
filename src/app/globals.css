@@ -1,5 +1,26 @@
 @import "tailwindcss";
 
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-UltraLight.ttf') format('truetype'); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-UltraLightItalic.ttf') format('truetype'); font-weight: 100; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-Thin.ttf') format('truetype'); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-ThinItalic.ttf') format('truetype'); font-weight: 200; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-Light.ttf') format('truetype'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-LightItalic.ttf') format('truetype'); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-Regular.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-RegularItalic.ttf') format('truetype'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-Medium.ttf') format('truetype'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-MediumItalic.ttf') format('truetype'); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-SemiBold.ttf') format('truetype'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-SemiBoldItalic.ttf') format('truetype'); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-Bold.ttf') format('truetype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-BoldItalic.ttf') format('truetype'); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-ExtraBold.ttf') format('truetype'); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-ExtraBoldItalic.ttf') format('truetype'); font-weight: 800; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-Heavy.ttf') format('truetype'); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-HeavyItalic.ttf') format('truetype'); font-weight: 900; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-Black.ttf') format('truetype'); font-weight: 950; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Gilroy'; src: url('/fonts/Gilroy-BlackItalic.ttf') format('truetype'); font-weight: 950; font-style: italic; font-display: swap; }
+
 :root {
   /* ── IT Services Brand Palette ── */
   --color-white: #FFFFFF;
@@ -19,7 +40,7 @@
   --color-card-bg: #FFFFFF;
 
   /* ── Tailwind semantic aliases ── */
-  --background: #FFFFFF;
+  --background: #00050F;
   --foreground: #1E293B;
   --color-light: #F4F7FB;
   --color-dark: #0a1329;
@@ -87,7 +108,7 @@
   --color-text-primary: var(--color-text-primary);
   --color-text-secondary: var(--color-text-secondary);
   --color-border: var(--color-border);
-  --font-sans: var(--font-jakarta);
+  --font-sans: 'Gilroy', Arial, sans-serif;
   --color-indigo-dark: var(--color-indigo-dark);
   --color-indigo-mid: var(--color-indigo-mid);
   --color-indigo-bright: var(--color-indigo-bright);
@@ -130,11 +151,22 @@
 /* ── Base ── */
 html,
 body {
-  background: var(--background);
+  background: #00050F !important;
+  background-color: #00050F !important;
   color: var(--foreground);
-  font-family: var(--font-jakarta), Arial, Helvetica, sans-serif;
+  font-family: 'Gilroy', Arial, Helvetica, sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Force no white flash on any element */
+#__next,
+main {
+  background-color: #00050F;
 }
 
 /* ── Swiper overrides (kept for FAQ / testimonial sliders) ── */

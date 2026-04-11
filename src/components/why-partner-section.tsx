@@ -2,61 +2,85 @@ import { Award, ShieldCheck, Focus } from "lucide-react";
 
 const DIFFERENTIATORS = [
   {
-    icon: <Award className="w-7 h-7 text-[#3a4096]" />,
+    icon: <Award className="w-7 h-7" />,
     title: "Deep Expertise",
     description:
       "Our team of certified professionals brings extensive knowledge across a wide range of technologies, industries, and platforms — ensuring you always have the right expertise at hand.",
   },
   {
-    icon: <ShieldCheck className="w-7 h-7 text-[#3a4096]" />,
+    icon: <ShieldCheck className="w-7 h-7" />,
     title: "Proven Reliability",
     description:
-      "We are committed to delivering consistent, high-quality service you can depend on — backed by defined SLAs and a track record of keeping businesses running smoothly.",
+      "We deliver consistent, high-quality service backed by defined SLAs and a track record of keeping businesses running smoothly.",
   },
   {
-    icon: <Focus className="w-7 h-7 text-[#0a1329]" />,
+    icon: <Focus className="w-7 h-7" />,
     title: "Your Focus Restored",
     description:
-      "With your IT in capable hands, you and your team can redirect energy toward what truly matters — growing your business, serving customers, and pursuing strategic goals.",
+      "With your IT in capable hands, redirect energy toward what truly matters — growing your business, serving customers, and pursuing strategic goals.",
   },
 ];
 
 const WhyPartnerSection = () => {
   return (
-    <section className="bg-white py-16 md:py-24">
-      <div className="mx-auto max-w-[1200px] xl:max-w-[1280px] px-6 lg:px-10">
-        {/* Heading */}
-        <div className="text-center max-w-2xl mx-auto mb-14" data-aos="fade-up">
-          <span className="inline-block text-sm font-bold uppercase tracking-widest text-[#3a4096] mb-4">
-            Why Choose Us
-          </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#1E293B] leading-tight tracking-tight mb-4">
-            Why Partner With Us?
-          </h2>
-          <p className="text-base text-[#64748B] leading-relaxed">
-            Choosing the right managed IT partner is one of the most important decisions your
-            business will make. Here&apos;s what sets us apart from the rest.
-          </p>
-        </div>
+    <section className="py-16 md:py-24">
+      <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-12">
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {DIFFERENTIATORS.map((d, i) => (
-            <div
-              key={d.title}
-              className="group flex flex-col gap-5 rounded-2xl bg-[#F4F7FB] border border-[#E2E8F0] p-8 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-              data-aos="fade-up"
-              data-aos-delay={i * 100}
-            >
-              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-white border border-[#E2E8F0] group-hover:bg-[#3a4096] group-hover:border-[#3a4096] transition-all duration-300 shadow-sm">
-                <div className="group-hover:[&_svg]:text-white transition-colors">
-                  {d.icon}
-                </div>
-              </div>
-              <h3 className="text-xl font-bold text-[#25285e]">{d.title}</h3>
-              <p className="text-sm text-[#64748B] leading-relaxed">{d.description}</p>
+          {/* ── Left: Label + Heading + Subtext ── */}
+          <div className="w-full lg:w-[500px] flex-shrink-0" data-aos="fade-right">
+              <div className="flex items-center gap-4">
+              <span className="text-[14px] font-semibold tracking-widest"
+                   style={{
+              background: "linear-gradient(135deg, #C477EA, #6F54F4)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}>
+                Why Choose Us
+              </span>
+              <span className="flex-1 max-w-[80px] h-px bg-white" />
             </div>
-          ))}
+
+            <h2
+              className="text-2xl md:text-[45px] pt-4 font-semibold leading-tight tracking-tight mb-5"
+              style={{ color: "#ffffff" }}
+            >
+              Why Partner With Us?
+            </h2>
+
+            <p className="text-[14px] md:text-[16px] leading-relaxed text-white/80">
+              Choosing the right managed IT partner is one of the most important
+              decisions your business will make.
+            </p>
+          </div>
+
+          {/* ── Right: Cards ── */}
+          <div className="w-full flex-1 flex justify-end">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-4 md:mt-8 w-full md:max-w-[790px]">
+              {DIFFERENTIATORS.map((d, i) => (
+                <div
+                  key={d.title}
+                  className="rounded-2xl p-[1px] bg-gradient-to-l from-white/60 to-white/10"
+                  data-aos="fade-up"
+                  data-aos-delay={i * 100}
+                >
+                  <div className="flex flex-col gap-2 rounded-2xl h-auto md:h-[320px] p-6 md:p-8 bg-[#11161f]">
+                    <h3 className="text-[22px] md:text-[30px] font-extrabold leading-snug" style={{
+              background: "linear-gradient(135deg, #C477EA, #6F54F4)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}>
+                      {d.title}
+                    </h3>
+                    <p className="text-[13px] md:text-[14px] text-white">
+                      {d.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

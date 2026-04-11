@@ -1,74 +1,99 @@
-const STEPS = [
+import Image from "next/image";
+import { Award, ShieldCheck, Focus } from "lucide-react";
+import arrowRight from "../../public/assets/arrow-right.png";
+
+const DIFFERENTIATORS = [
   {
-    number: "1",
-    title: "Discovery",
-    description: "Deep-dive assessment of your current technology environment and business goals.",
+    icon: <Award className="w-7 h-7" />,
+    title: "Schedule a Consultation",
+    description:
+      "Talk to one of our experts and discover how we can transform your IT environment.",
   },
   {
-    number: "2",
-    title: "Strategy Design",
-    description: "Building a tailored IT roadmap that prioritizes initiatives for maximum business impact.",
+    icon: <ShieldCheck className="w-7 h-7" />,
+    title: "Request an Assessment",
+    description:
+      "Get a comprehensive review of your current IT infrastructure at no cost or obligation.",
   },
   {
-    number: "3",
-    title: "Implementation",
-    description: "Guided execution of strategic projects with expert oversight and change management.",
-  },
-  {
-    number: "4",
-    title: "Measure & Optimize",
-    description: "Tracking outcomes and continuously refining the strategy to ensure ongoing ROI.",
+    icon: <Focus className="w-7 h-7" />,
+    title: "Become a Partner",
+    description:
+      "Join the growing number of businesses that trust us with their most critical technology.",
   },
 ];
 
 const StrategySection = () => {
   return (
-    <section className="bg-[#F4F7FB] py-16 md:py-24">
-      <div className="mx-auto max-w-[1200px] xl:max-w-[1280px] px-6 lg:px-10">
-        {/* Heading */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start mb-14">
-          <div data-aos="fade-right">
-            <span className="inline-block text-sm font-bold uppercase tracking-widest text-[#3a4096] mb-4">
-              IT Strategy &amp; Consulting
-            </span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-[#25285e] leading-tight tracking-tight">
-              Aligning Technology with Your Goals
+    <section className="py-16 md:py-24">
+      <div className="mx-auto max-w-[1400px] px-4 md:px-6 lg:px-10">
+        <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-12">
+
+          {/* ── Left: Label + Heading + Subtext ── */}
+          <div className="lg:w-[500px] flex-shrink-0" data-aos="fade-right">
+          <div className="flex items-center gap-4">
+              <span className="text-[14px] font-semibold tracking-widest "
+                   style={{
+              background: "linear-gradient(135deg, #C477EA, #6F54F4)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}>
+                Get Started
+              </span>
+              <span className="flex-1 max-w-[80px] h-px bg-white" />
+            </div>
+
+            <h2
+              className="text-2xl pt-4 md:text-[45px] font-semibold leading-tight tracking-tight mb-5"
+              style={{ color: "#ffffff" }}
+            >
+              Let's Build a Stronger,<br/> More Resilient Business.
             </h2>
-          </div>
-          <div data-aos="fade-left">
-            <p className="text-base text-[#64748B] leading-relaxed">
-              Technology is only valuable when it drives business outcomes. We partner with you to
-              develop a strategic IT roadmap that directly supports your objectives, reduces risk,
-              and maximizes return on every technology investment.
+
+            <p className="text-[14px] md:text-[16px] leading-relaxed text-[#EBEBEB] w-full">
+             The question isn't whether you can afford managed IT services — it's whether you can afford not to have them.
             </p>
           </div>
-        </div>
 
-        {/* Steps */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
-          {/* Connector */}
-          <div className="absolute top-12 left-[12.5%] right-[12.5%] h-px bg-[#3a4096]/20 hidden lg:block" />
+          {/* ── Right: Cards ── */}
 
-          {STEPS.map((step, i) => (
-            <div
-              key={step.number}
-              className="relative flex flex-col items-center text-center gap-4 group"
-              data-aos="fade-up"
-              data-aos-delay={i * 120}
+<div className="flex-1 flex justify-end mt-6 md:mt-10">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-5 w-full max-w-[780px]">
+    {DIFFERENTIATORS.map((d, i) => (
+      <div
+        key={d.title}
+        className="rounded-2xl p-[1px] bg-gradient-to-l from-white/60 to-white/10"
+        data-aos="fade-up"
+        data-aos-delay={i * 100}
+      >
+        <div className="flex flex-col justify-between rounded-2xl h-auto md:h-[320px] p-6 md:p-8 bg-[#11161f]">
+          <div className="flex flex-col gap-3">
+            <h3
+              className="text-[22px] md:text-[30px] font-extrabold leading-snug"
+              style={{
+                background: "linear-gradient(135deg, #C477EA, #6F54F4)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
             >
-              {/* Number bubble */}
-              <div className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-white border-2 border-[#3a4096] shadow-md group-hover:bg-[#3a4096] transition-colors duration-300">
-                <span className="text-xl font-extrabold text-[#0a1329] group-hover:text-white transition-colors duration-300">
-                  {step.number}
-                </span>
-              </div>
+              {d.title}
+            </h3>
+            <p className="text-[13px] md:text-[15px] text-white">
+              {d.description}
+            </p>
+          </div>
+          <div className="flex items-center gap-2 mt-4 md:mt-6 group cursor-pointer">
+            <span className="text-sm font-semibold text-white/80 group-hover:text-white transition">
+              Get Started
+            </span>
+            <Image src={arrowRight} alt="" className="pt-1 ml-2" />
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
 
-              <div className="bg-white rounded-2xl border border-[#E2E8F0] p-6 shadow-sm hover:shadow-md transition-all duration-300 w-full">
-                <h3 className="text-lg font-bold text-[#25285e] mb-2">{step.title}</h3>
-                <p className="text-sm text-[#64748B] leading-relaxed">{step.description}</p>
-              </div>
-            </div>
-          ))}
         </div>
       </div>
     </section>

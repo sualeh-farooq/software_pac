@@ -19,7 +19,7 @@ const IT_SELECT_FIELDS = [
       { value: "network", label: "Network Infrastructure" },
       { value: "cybersecurity", label: "Cybersecurity" },
       { value: "cloud", label: "Cloud Services" },
-      { value: "strategy", label: "IT Strategy & Consulting" },
+      { value: "strategy", label: "" },
       { value: "all", label: "Full Managed IT Package" },
     ],
   },
