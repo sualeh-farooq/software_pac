@@ -104,7 +104,7 @@ const FooterSection = () => {
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-0 px-4 md:px-14 pt-6 pb-4 md:pb-0 text-sm text-white/80">
           <p>© {new Date().getFullYear()} SoftwarePac. All rights reserved.</p>
-          <div className="flex gap-8">
+          <div className="flex gap-14">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
             <Link href="/cookies" className="hover:text-white transition-colors">Cookies</Link>
