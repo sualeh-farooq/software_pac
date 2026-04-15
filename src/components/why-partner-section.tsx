@@ -23,7 +23,12 @@ const DIFFERENTIATORS = [
 
 const WhyPartnerSection = () => {
   return (
-    <section className="py-16 md:py-24">
+      <section className="py-16  md:py-24"
+      style={{
+    backgroundColor: "#04020f",
+    backgroundImage:
+      "radial-gradient(ellipse 900px 1200px at 00% 0%, #221a3f 0%, rgba(34,26,63,0.55) 40%, rgba(34,26,63,0.15) 65%, transparent 80%)",
+  }}>
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-12">
 
@@ -60,7 +65,7 @@ const WhyPartnerSection = () => {
               {DIFFERENTIATORS.map((d, i) => (
                 <div
                   key={d.title}
-                  className="rounded-2xl p-[1px] bg-gradient-to-l from-white/60 to-white/10"
+                  className="rounded-2xl p-[1px] bg-gradient-to-l from-white/60 to-white/5"
                   data-aos="fade-up"
                   data-aos-delay={i * 100}
                 >

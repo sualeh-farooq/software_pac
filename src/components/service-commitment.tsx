@@ -2,20 +2,14 @@
 import Image from "next/image";
 import succescard_bg from "../../public/assets/succescard-bg.png"
 
-const STATS = [
-  { value: "99.9%", label: "Uptime Guarantee" },
-  { value: "24/7", label: "Support Coverage" },
-  { value: "<1HR", label: "Incident Response" },
-  { value: "100%", label: "Ownership of Your IT" },
-];
 
-;const CommitmentSection = () => {
+;const ServiceCommitment = () => {
   return (
 <section className="py-16 md:py-24"
   style={{
     backgroundColor: "#04020f",
     backgroundImage: `
-      radial-gradient(ellipse 900px 600px at 0% 0%, #221a3f 0%, rgba(34,26,63,0.55) 0%, rgba(34,26,63,0.15) 65%, transparent 80%),
+      radial-gradient(ellipse 900px 600px at 0% 0%, #221a3f 0%, rgba(34,26,63,0.55) 40%, rgba(34,26,63,0.15) 65%, transparent 80%),
       radial-gradient(ellipse 1000px 1000px at 100% 100%, #221a3f 0%, rgba(34,26,63,0.55) 40%, rgba(34,26,63,0.15) 65%, transparent 80%)
     `,
   }}>
@@ -85,19 +79,9 @@ const STATS = [
 </div>
 
       </div>
-          <div className="w-full max-w-[1800px] mt-22 mx-auto px-6 md:px-12 xl:px-16 ">
-          <div className="w-full h-px bg-white/30 mb-8 md:mb-12" />
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16 text-center">
-            {STATS.map((s) => (
-              <div key={s.label} className="flex flex-col gap-1">
-                <span className="text-[clamp(28px,3.5vw,50px)] font-bold text-white leading-none tracking-tight">{s.value}</span>
-                <span className="text-[12px] md:text-[15px] text-white/70 font-medium tracking-wide ">{s.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+    
     </section>
   );
 };
 
-export default CommitmentSection;
+export default ServiceCommitment;

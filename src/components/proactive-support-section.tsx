@@ -12,7 +12,12 @@ const INCLUDES = [
 
 const ProactiveSupportSection = () => {
   return (
-    <section className="py-16  md:py-24">
+    <section className="py-16  md:py-24"
+      style={{
+    backgroundColor: "#04020f",
+    backgroundImage:
+      "radial-gradient(ellipse 1000px 1000px at 100% 0%, #221a3f 0%, rgba(34,26,63,0.55) 40%, rgba(34,26,63,0.15) 65%, transparent 80%)",
+  }}>
       <div className="mx-auto max-w-[1400px]  xl:max-w-[1500px] px-8 lg:px-14">
         <div className="grid grid-cols-1 lg:grid-cols-2  items-center">
 
@@ -46,7 +51,7 @@ const ProactiveSupportSection = () => {
             {/* Feature cards */}
 <ul className="flex flex-col gap-3 mt-2 w-full md:w-fit">
   {INCLUDES.map((item) => (
-    <li key={item} className="relative rounded-[16px] p-[2px] bg-gradient-to-l from-white/40 to-white/10">
+    <li key={item} className="relative rounded-[16px] p-[2px] bg-gradient-to-l from-white/40 to-white/5">
       <div className="flex items-center gap-4 rounded-xl bg-[#11161f] px-4 md:px-7 pr-6 md:pr-16 py-4 md:py-6">
         <span
           className="w-3 h-3 rounded-full flex-shrink-0"

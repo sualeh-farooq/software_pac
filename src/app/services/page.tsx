@@ -1,16 +1,33 @@
 import { Metadata } from "next";
 import ComingSoonPage from "@/components/coming-soon-page";
+import ServiceHeroSection from "@/components/service-hero-sec";
+import StrategySection from "@/components/strategy-section";
+import NetworkProcessSection from "@/components/network-process-section";
+import Divider from "@/components/divider";
+import ServiceCommitment from "@/components/service-commitment";
+import CorePillar from "@/components/corepillars";
+import ProactiveITSupport from "@/components/ProactiveItSupport";
+import GradientFooter from "@/components/gradient-footer";
 
 export const metadata: Metadata = {
   title: "Our Services | SoftwarePac",
   description: "Explore our full range of managed IT, cybersecurity, cloud, and network services.",
 };
 
+
 export default function ServicesPage() {
   return (
-    <ComingSoonPage
-      title="Services Page — Coming Soon"
-      description="We're building detailed pages for each of our services. In the meantime, explore everything we offer on our home page."
-    />
+  <main className="min-h-screen bg-[#00050F]">
+      {/* 1 — Hero */}
+   <ServiceHeroSection/>
+
+<CorePillar/>
+<ProactiveITSupport/>
+<Divider/>
+<NetworkProcessSection />
+<ServiceCommitment/>
+<StrategySection />
+<GradientFooter/>
+    </main>
   );
 }

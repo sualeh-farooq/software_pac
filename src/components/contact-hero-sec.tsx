@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import heroBg from "../../public/assets/hero-bg.png";
+import heroBgLeft from "../../public/assets/hero-bg-left.png";
+
 import logo from "../../public/assets/logo.png";
 import ellipseImg from "../../public/assets/Ellipse.png"; 
-import StatsSection from "./stats";
 const NAV_LINKS = [
   { label: "HOME", href: "/" },
   { label: "SERVICE", href: "/services" },
@@ -14,8 +15,24 @@ const NAV_LINKS = [
   { label: "CONTACT", href: "/contact" },
 ];
 
-const HeroSection = () => {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+const STATS = [
+  { value: "99.9%", label: "Uptime Guarantee" },
+  { value: "24/7", label: "Support Coverage" },
+  { value: "<1HR", label: "Incident Response" },
+  { value: "100%", label: "Ownership of Your IT" },
+];
+const 
+ContactHeroSection = ({
+  title = (
+    <>
+ Let’s Power Your Next <br/> Tech Leap    
+      Ex
+    </>
+  ),
+
+  description = "Whether it's scaling your operations or securing your infrastructure—our expert team is just a message away.",
+  badge = "              Managed IT & Network Services",
+}) => {  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   useEffect(() => {
     document.body.style.overflow = isDrawerOpen ? "hidden" : "unset";
@@ -33,6 +50,7 @@ const HeroSection = () => {
 {/* Background image */}
 <div className="absolute inset-0 z-0">
   {/* Hero Image */}
+
   <Image
     src={heroBg}
     alt=""
@@ -42,6 +60,7 @@ const HeroSection = () => {
     priority
     className="  ml-auto  md:object-contain object-right"
   />
+
 
   {/* Ellipse Overlay (Top Right) */}
   <div className="absolute top-0 right-0 pointer-events-none">
@@ -183,51 +202,44 @@ const HeroSection = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-1 flex-col items-center justify-center">
+      <div className="relative  z-10 flex flex-1 flex-col items-center justify-center">
+<div className="absolute inset-0 z-0 flex items-end">
+  <Image
+    src={heroBgLeft}
+    alt=""
+    aria-hidden
+    width={730}
+    priority
+    className="object-contain object-left"
+  />
+</div>
         <div className="w-full max-w-[1200px] px-6 pt-10 md:pt-16 xl:pt-20 pb-10 md:pb-16 text-center">
 
           {/* Badge */}
           <div className="mb-4 mt-4 md:mt-6 inline-flex items-center rounded-full border border-white/20 bg-white/5 backdrop-blur-sm px-3 md:px-5 py-1.5 shadow-sm" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
             <span className="text-[10px] md:text-[12px] font-semibold text-white tracking-[0.1rem] uppercase">
-              Managed IT &amp; Network Services
+              {badge}
+
             </span>
           </div>
 
           {/* Headline */}
           <h1 className="text-[clamp(28px,5vw,61px)] w-full font-bold leading-[1.15] tracking-[-0.02em] text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
-            Empowering Your Business<br />
-            With Seamless Technology<br />
-            Solutions
+            {title}
           </h1>
 
           {/* Description */}
           <p className="text-[13px] md:text-[15px] xl:text-[16px] text-[#EBEBEB] leading-relaxed max-w-[700px] mx-auto mb-6 md:mb-8 mt-4 md:mt-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-            Your technology should work for you — not the other way around. We deliver managed IT and network services that keep your business
-            running securely, efficiently, and confidently in an ever-changing digital landscape.
+            {description}
           </p>
 
-          {/* CTA Button */}
-          <div className="flex justify-center mb-6 md:mb-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
-            <Link
-              href="/services"
-              className="inline-flex items-center justify-center text-white font-bold tracking-[0.05em] transition-all duration-300 hover:opacity-90 hover:scale-[1.02] rounded-full px-6 py-3 md:px-8 md:py-6 text-[12px] md:text-[14px]"
-              style={{
-                background: "linear-gradient(135deg, #C477EA 0%, #6F54F4 100%)",
-                border: "0.5px solid rgba(255,255,255,0.2)",
-                boxShadow: "0 10px 30px rgba(111,84,244,0.4)",
-              }}
-            >
-              EXPLORE OUR SERVICES
-            </Link>
-          </div>
-
+  
         </div>
 
-        {/* Stats */}
-     <StatsSection/>
       </div>
+
     </section>
   );
 };
 
-export default HeroSection;
+export default ContactHeroSection;

@@ -54,28 +54,16 @@ export default function Home() {
       {/* 4 — Our Solution (split layout with image) */}
       <SolutionSection />
 
-      {/* 5 — Services Overview (3 service pillars) */}
       <CloudServicesSection />
       <WhyPartnerSection />
 
-      {/* 6 — Proactive IT Support (feature list + image) */}
 <Divider/>
 <CommitmentSection/>
 
-      {/* 7 — Network Infrastructure (4-step process) */}
 
-      {/* 8 — Cybersecurity (dark blue section) */}
-
-      {/* 9 — Cloud Services (capabilities + image) */}
-
-      {/* 10 — IT Strategy & Consulting (4-step process) */}
       <StrategySection />
 
-      {/* 11 — Why Partner With Us */}
 
-      {/* 12 — Commitment Stats (dark blue: 99.9%, 24/7, <1hr) */}
-
-      {/* Footer */}
       <FooterSection />
     </main>
   );

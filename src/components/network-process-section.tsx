@@ -30,7 +30,12 @@ const STEPS = [
 
 const NetworkProcessSection = () => {
   return (
-    <section className=" py-16 md:py-24 ">
+    <section className=" py-16 md:py-24 "
+          style={{
+    backgroundColor: "#04020f",
+    backgroundImage:
+      "radial-gradient(ellipse 900px 900px at 0% 100%, #221a3f 0%, rgba(34,26,63,0.55) 40%, rgba(34,26,63,0.15) 65%, transparent 80%)",
+  }}>
       <div className="mx-autopx] px-6 lg:px-10">
 
         {/* Heading */}
@@ -90,7 +95,7 @@ const NetworkProcessSection = () => {
                 </div>
 
                 {/* Gradient Border Wrapper */}
-                <div className="rounded-2xl p-[1px] bg-gradient-to-l from-white/60 to-white/10 h-full">
+                <div className="rounded-2xl p-[1px] bg-gradient-to-l from-white/60 to-white/5 h-full">
 
                   {/* Card */}
                   <div className="w-full rounded-2xl bg-[#0e1220] pt-10  pb-6 px-7 text-center h-full flex flex-col justify-center">

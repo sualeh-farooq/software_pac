@@ -1,5 +1,9 @@
+import ContactHeroSection from "@/components/contact-hero-sec";
+import ContactInfo from "@/components/contact-info";
+import Divider from "@/components/divider";
+import GetInTouch from "@/components/get-in-touch";
+import GradientFooter from "@/components/gradient-footer";
 import { Metadata } from "next";
-import ComingSoonPage from "@/components/coming-soon-page";
 
 export const metadata: Metadata = {
   title: "Contact Us | SoftwarePac",
@@ -8,9 +12,12 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <ComingSoonPage
-      title="Contact Page — Coming Soon"
-      description="In the meantime, you can reach us through the contact form on our home page."
-    />
+<>
+<ContactHeroSection/>
+<Divider/>
+<GetInTouch/>
+<ContactInfo/>
+<GradientFooter/>
+</>
   );
 }

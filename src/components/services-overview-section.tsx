@@ -29,7 +29,7 @@ const SERVICES = [
 function ServiceCard({ svc }: { svc: any }) {
   return (
 <div
-  className="p-[1px] rounded-2xl bg-gradient-to-l from-white/60 to-white/10 group"
+  className="p-[1px] rounded-2xl bg-gradient-to-l from-white/60 to-white/5 group"
 >
   <div
     className="relative rounded-2xl p-4  h-full overflow-hidden border transition-all duration-300 "
@@ -91,11 +91,11 @@ const ServicesOverviewSection = () => {
   return (
     <section
       className="py-14 overflow-hidden relative"
-      style={{
-        backgroundColor: "#04020f",
-        backgroundImage:
-          "radial-gradient(ellipse 500px 400px at 100% 100%, rgba(110,45,190,0.38) 0%, rgba(60,10,120,0.14) 50%, transparent 72%)",
-      }}
+style={{
+  backgroundColor: "#04020f",
+  backgroundImage:
+    "radial-gradient(ellipse 1000px 800px at 100% 100%, #221a3f 0%, rgba(34,26,63,0.55) 40%, rgba(34,26,63,0.15) 65%, transparent 80%)",
+}}
     >
       {/* Bottom-right concentric rings */}
       <div className="pointer-events-none absolute bottom-[-140px] right-[-140px] w-[1200px] h-[1200px] " />

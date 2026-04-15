@@ -14,8 +14,15 @@ const INCLUDES = [
 
 const SolutionSection = () => {
   return (
-    <section className="py-16 md:py-24">
-      <div className="mx-auto max-w-[1400px] xl:max-w-[1500px] px-8 lg:px-14">
+    <section className="py-16  md:py-24"
+      style={{
+    backgroundColor: "#04020f",
+    backgroundImage:
+      "radial-gradient(ellipse 1000px 1400px at 100% 0%, #221a3f 0%, rgba(34,26,63,0.55) 40%, rgba(34,26,63,0.15) 65%, transparent 80%)",
+  }}>     
+  
+  
+   <div className="mx-auto max-w-[1400px] xl:max-w-[1500px] px-8 lg:px-14">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
 
           {/* Left: Text */}

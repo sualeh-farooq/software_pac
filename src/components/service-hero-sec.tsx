@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import heroBg from "../../public/assets/hero-bg.png";
+import heroBgLeft from "../../public/assets/hero-bg-left.png";
+
 import logo from "../../public/assets/logo.png";
 import ellipseImg from "../../public/assets/Ellipse.png"; 
 import StatsSection from "./stats";
@@ -14,8 +16,25 @@ const NAV_LINKS = [
   { label: "CONTACT", href: "/contact" },
 ];
 
-const HeroSection = () => {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+const STATS = [
+  { value: "99.9%", label: "Uptime Guarantee" },
+  { value: "24/7", label: "Support Coverage" },
+  { value: "<1HR", label: "Incident Response" },
+  { value: "100%", label: "Ownership of Your IT" },
+];
+const 
+ServiceHeroSection = ({
+  title = (
+    <>
+      Mastering Efficiency with <br />
+      Expert IT Operations <br />
+      Management
+    </>
+  ),
+
+  description = "We don't just fix issues; we build robust frameworks. Implementing ITIL-aligned processes to ensure your tech infrastructure is seamless, scalable, and secure.",
+  badge = "              Managed IT & Network Services",
+}) => {  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   useEffect(() => {
     document.body.style.overflow = isDrawerOpen ? "hidden" : "unset";
@@ -33,6 +52,7 @@ const HeroSection = () => {
 {/* Background image */}
 <div className="absolute inset-0 z-0">
   {/* Hero Image */}
+
   <Image
     src={heroBg}
     alt=""
@@ -42,6 +62,7 @@ const HeroSection = () => {
     priority
     className="  ml-auto  md:object-contain object-right"
   />
+
 
   {/* Ellipse Overlay (Top Right) */}
   <div className="absolute top-0 right-0 pointer-events-none">
@@ -183,27 +204,35 @@ const HeroSection = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-1 flex-col items-center justify-center">
+      <div className="relative  z-10 flex flex-1 flex-col items-center justify-center">
+<div className="absolute inset-0 z-0 flex items-end">
+  <Image
+    src={heroBgLeft}
+    alt=""
+    aria-hidden
+    width={730}
+    priority
+    className="object-contain object-left"
+  />
+</div>
         <div className="w-full max-w-[1200px] px-6 pt-10 md:pt-16 xl:pt-20 pb-10 md:pb-16 text-center">
 
           {/* Badge */}
           <div className="mb-4 mt-4 md:mt-6 inline-flex items-center rounded-full border border-white/20 bg-white/5 backdrop-blur-sm px-3 md:px-5 py-1.5 shadow-sm" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
             <span className="text-[10px] md:text-[12px] font-semibold text-white tracking-[0.1rem] uppercase">
-              Managed IT &amp; Network Services
+              {badge}
+
             </span>
           </div>
 
           {/* Headline */}
           <h1 className="text-[clamp(28px,5vw,61px)] w-full font-bold leading-[1.15] tracking-[-0.02em] text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
-            Empowering Your Business<br />
-            With Seamless Technology<br />
-            Solutions
+            {title}
           </h1>
 
           {/* Description */}
           <p className="text-[13px] md:text-[15px] xl:text-[16px] text-[#EBEBEB] leading-relaxed max-w-[700px] mx-auto mb-6 md:mb-8 mt-4 md:mt-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-            Your technology should work for you — not the other way around. We deliver managed IT and network services that keep your business
-            running securely, efficiently, and confidently in an ever-changing digital landscape.
+            {description}
           </p>
 
           {/* CTA Button */}
@@ -223,11 +252,11 @@ const HeroSection = () => {
 
         </div>
 
-        {/* Stats */}
-     <StatsSection/>
       </div>
+             <StatsSection/>
+
     </section>
   );
 };
 
-export default HeroSection;
+export default ServiceHeroSection;

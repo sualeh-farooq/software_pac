@@ -25,8 +25,12 @@ const CARDS = [
 
 const CloudServicesSection = () => {
   return (
-    <section className=" py-16 md:py-24">
-      <div className="mx-auto max-w-[1200px] xl:max-w-[1450px] px-6 lg:px-10">
+    <section className="py-16  md:py-24"
+      style={{
+    backgroundColor: "#04020f",
+    backgroundImage:
+      "radial-gradient(ellipse 900px 400px at 0% 100%, #221a3f 0%, rgba(34,26,63,0.55) 40%, rgba(34,26,63,0.15) 65%, transparent 80%)",
+  }}>      <div className="mx-auto max-w-[1200px] xl:max-w-[1450px] px-6 lg:px-10">
 
         {/* Top: Centered heading block */}
         <div className="flex flex-col items-center text-center gap-5 mb-14" data-aos="fade-up">
@@ -64,7 +68,7 @@ const CloudServicesSection = () => {
   {CARDS.map((card, i) => (
     <div
       key={card.title}
-      className="rounded-2xl p-[1px] bg-gradient-to-l  from-white/60 to-white/10"
+      className="rounded-2xl p-[1px] bg-gradient-to-l  from-white/60 to-white/5"
       data-aos="fade-up"
       data-aos-delay={i * 80}
     >
