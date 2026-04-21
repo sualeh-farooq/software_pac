@@ -10,7 +10,7 @@ import StatsSection from "./stats";
 const NAV_LINKS = [
   { label: "HOME", href: "/" },
   { label: "SERVICE", href: "/services" },
-  { label: "ABOUT", href: "/about" },
+  { label: "ABOUT", href: "/" },
   { label: "CONTACT", href: "/contact" },
 ];
 
