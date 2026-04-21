@@ -30,7 +30,7 @@ const STEPS = [
 
 const NetworkProcessSection = () => {
   return (
-    <section className=" py-16 md:py-24 "
+    <section className=" py-16 md:py-24 " id="networkinfrastructure"
           style={{
     backgroundColor: "#04020f",
     backgroundImage:

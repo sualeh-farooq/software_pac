@@ -14,7 +14,7 @@ const INCLUDES = [
 
 const SolutionSection = () => {
   return (
-    <section className="py-16  md:py-24"
+    <section className="py-16  md:py-24" id="cloudservices"
       style={{
     backgroundColor: "#04020f",
     backgroundImage:

@@ -25,7 +25,7 @@ const CARDS = [
 
 const CloudServicesSection = () => {
   return (
-    <section className="py-16  md:py-24"
+    <section className="py-16  md:py-24" id="consulting"
       style={{
     backgroundColor: "#04020f",
     backgroundImage:

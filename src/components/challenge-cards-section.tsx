@@ -38,7 +38,7 @@ const TABS = ["THREAT DETECTION", "PREVENTION & HARDENING", "COMPLIANCE"];
 
 const CybersecuritySection = () => {
   return (
-<section className="py-16 md:py-24"
+<section className="py-16 md:py-24 " id="cybersecurity"
   style={{
     backgroundColor: "#04020f",
     backgroundImage: `
