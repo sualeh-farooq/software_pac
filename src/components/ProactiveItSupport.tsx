@@ -32,20 +32,23 @@ const ProactiveITSupport = ({
       className="py-16 md:py-24"
       style={{
         backgroundColor: "#04020f",
-        backgroundImage:
-          "radial-gradient(ellipse 900px 900px at 0% 0%, #221a3f 0%, rgba(34,26,63,0.55) 40%, rgba(34,26,63,0.15) 65%, transparent 80%)",
+         backgroundImage: `
+      radial-gradient(ellipse 1000px 500px at 0% 0%, #221a3f 0%, rgba(34,26,63,0.55) 30%, rgba(34,26,63,0.15) 65%, transparent 80%),
+      radial-gradient(ellipse 1000px 1000px at 100% 100%, #221a3f 0%, rgba(34,26,63,0.55) 30%, rgba(34,26,63,0.15) 65%, transparent 80%)
+    `,
+          
       }}
     >
       <div className="mx-auto max-w-[1400px] xl:max-w-[1500px] px-8 lg:px-14">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
 
           {/* Left */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-4">
 
             {/* Label */}
             <div className="flex items-center gap-4">
               <span
-                className="text-[14px] font-semibold tracking-widest"
+                className="text-[15px] font-semibold tracking-widest"
                 style={{
                   background: "linear-gradient(135deg, #C477EA, #6F54F4)",
                   WebkitBackgroundClip: "text",
@@ -81,7 +84,7 @@ const ProactiveITSupport = ({
                         background: "linear-gradient(135deg, #C477EA, #6F54F4)",
                       }}
                     />
-                    <span className="text-sm md:text-base text-[#c5cade]">
+                    <span className="text-sm md:text-base text-[#c5cade] ml-2">
                       {item}
                     </span>
                   </div>

@@ -7,11 +7,11 @@ import icon2 from "../../../public/assets/cybersecurity-icon2.png";
 import icon3 from "../../../public/assets/cybersecurity-icon3.png";
 import ProactiveITSupport from "@/components/ProactiveItSupport";
 import Divider from "@/components/divider";
-import NetworkProcessSection from "@/components/network-process-section";
 import ServiceCommitment from "@/components/service-commitment";
 import StrategySection from "@/components/strategy-section";
 import GradientFooter from "@/components/gradient-footer";
 import serviceimage1 from "../../../public/assets/service1.png";
+import BackBone from "@/components/backbone";
 
 export const metadata: Metadata = {
   title: "Our Services | SoftwarePac",
@@ -88,7 +88,7 @@ export default function ServicesPage() {
 
 />
 <Divider/>
-<NetworkProcessSection />
+<BackBone />
 <ServiceCommitment/>
 <StrategySection />
 <GradientFooter/>

@@ -106,7 +106,7 @@ export default function ChallengesIntroSection() {
             <div className="flex items-center justify-center gap-6 mb-5"  data-aos="fade-up"
     >
           <span className="w-18 h-px bg-white/80"></span>
-          <span className="text-[12px] md:text-[18px] font-semibold"
+          <span className="text-[14px] md:text-[18px] font-semibold"
                 style={{
                   background: "linear-gradient(135deg, #C477EA, #6F54F4)",
                   WebkitBackgroundClip: "text",
@@ -134,7 +134,7 @@ export default function ChallengesIntroSection() {
         <div className="relative mt-16">
 
    
-          <div className="relative grid grid-cols-1 md:grid-cols-3 gap-12 px-6 md:px-16 pt-16 max-w-[1420px] mx-auto">
+          <div className="relative grid grid-cols-1 md:grid-cols-3 gap-12 px-6 pt-2 md:px-16 md:pt-16 max-w-[1420px] mx-auto">
 
             <div className="md:mt-52" data-aos="fade-right"
      data-aos-anchor-placement="top-bottom" >

@@ -43,8 +43,8 @@ const ProactiveSupportSection = () => {
             </h2>
 
             {/* Body */}
-            <p className="text-[14px] md:text-[16px] text-[#EBEBEB] leading-relaxed">
-              Reactive IT support is a thing of the past. We detect and address
+            <p className="text-[14px] md:text-[16px] text-[#EBEBEB]/80 leading-relaxed">
+              Reactive IT support is a thing of the past. We detect and address <br/>
               potential issues before they impact your business.
             </p>
 
@@ -54,10 +54,10 @@ const ProactiveSupportSection = () => {
     <li key={item} className="relative rounded-[16px] p-[2px] bg-gradient-to-l from-white/40 to-white/5">
       <div className="flex items-center gap-4 rounded-xl bg-[#11161f] px-4 md:px-7 pr-6 md:pr-16 py-4 md:py-6">
         <span
-          className="w-3 h-3 rounded-full flex-shrink-0"
+          className="w-3 h-3 rounded-full flex-shrink-0 ml-2"
           style={{ background: "linear-gradient(135deg, #C477EA, #6F54F4)" }}
         />
-        <span className="text-sm md:text-base text-[#c5cade] leading-snug">{item}</span>
+        <span className="text-sm md:text-base text-white/90 pl-4 leading-snug">{item}</span>
       </div>
     </li>
   ))}

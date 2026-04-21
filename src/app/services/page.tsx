@@ -2,12 +2,12 @@ import { Metadata } from "next";
 import ComingSoonPage from "@/components/coming-soon-page";
 import ServiceHeroSection from "@/components/service-hero-sec";
 import StrategySection from "@/components/strategy-section";
-import NetworkProcessSection from "@/components/network-process-section";
 import Divider from "@/components/divider";
 import ServiceCommitment from "@/components/service-commitment";
 import CorePillar from "@/components/corepillars";
 import ProactiveITSupport from "@/components/ProactiveItSupport";
 import GradientFooter from "@/components/gradient-footer";
+import BackBone from "@/components/backbone";
 
 export const metadata: Metadata = {
   title: "Our Services | SoftwarePac",
@@ -24,7 +24,7 @@ export default function ServicesPage() {
 <CorePillar/>
 <ProactiveITSupport/>
 <Divider/>
-<NetworkProcessSection />
+<BackBone/>
 <ServiceCommitment/>
 <StrategySection />
 <GradientFooter/>

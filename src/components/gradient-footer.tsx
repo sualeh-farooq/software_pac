@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../public/assets/logo.png";
+import logo from "../../public/assets/Logo1.png";
 import { IT_NAV_GROUPS, IT_CONTACT_CARDS, IT_SOCIAL_LINKS } from "@/constants/it-services.constants";
 
 const NAV_GROUPS = [
@@ -61,8 +61,8 @@ const GradientFooter = () => {
                 <Image
                   src={logo}
                   alt="SoftwarePac"
-                  width={220}
-                  height={140}
+                  width={170}
+                  height={120}
                   className="object-contain"
                 />
               </Link>

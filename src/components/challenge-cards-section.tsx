@@ -78,8 +78,8 @@ const CybersecuritySection = () => {
           <div className="flex flex-col gap-8 ml-0 md:ml-20"  >
             <div className="flex gap-4 items-start pt-12" data-aos="fade-left ">
               <span className="w-[3px] h-19 flex-shrink-0 self-stretch  rounded-full bg-gradient-to-b from-[#C477EA] to-[#6F54F4]"  />
-              <p className="text-[16px] text-[#c5cade] leading-relaxed pt-3 " >
-                Every solution we architect begins with security as a foundational
+              <p className="text-[16px] text-white/80 leading-relaxed pt-3 " >
+                Every solution we architect begins with security as a foundational <br/>
                 principle — not an afterthought.
               </p>
             </div>
@@ -89,7 +89,7 @@ const CybersecuritySection = () => {
               {TABS.map((tab) => (
                 <span
                   key={tab}
-                  className="rounded-full border border-[#2a2f4a] bg-transparent px-4 py-1.5 text-[11px] font-semibold uppercase tracking-widest text-white"
+                  className="rounded-full border border-[#2a2f4a] bg-transparent px-2 py-1.5 text-[11px] font-medium uppercase tracking-widest text-white"
                 >
                   {tab}
                 </span>

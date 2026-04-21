@@ -6,7 +6,7 @@ import Image from "next/image";
 import heroBg from "../../public/assets/hero-bg.png";
 import heroBgLeft from "../../public/assets/hero-bg-left.png";
 
-import logo from "../../public/assets/logo.png";
+import logo from "../../public/assets/Logo1.png";
 import ellipseImg from "../../public/assets/Ellipse.png"; 
 const NAV_LINKS = [
   { label: "HOME", href: "/" },
@@ -93,9 +93,9 @@ ContactHeroSection = ({
               <Image
                 src={logo}
                 alt="Software Pac Logo"
-                width={100}
-                height={80}
-                className="h-[28px] md:h-[35px] xl:h-[40px] w-auto object-contain group-hover:brightness-110 transition"
+                width={70}
+                height={50}
+                className="h-[25px] md:h-[25px] xl:h-[30px] ml-4 w-auto object-contain group-hover:brightness-110 transition"
               />
             </Link>
 

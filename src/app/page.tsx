@@ -15,12 +15,7 @@ const NetworkProcessSection   = dynamic(() => import("@/components/network-proce
 const CloudServicesSection    = dynamic(() => import("@/components/cloud-services-section"));
 const StrategySection         = dynamic(() => import("@/components/strategy-section"));
 const WhyPartnerSection       = dynamic(() => import("@/components/why-partner-section"));
-const CommitmentStatsSection  = dynamic(() => import("@/components/commitment-stats-section"));
-const FutureReadySolutionsSection = dynamic(() => import("@/components/future-ready-solutions-section"));
-const SeamlessIntegrationSection = dynamic(() => import("@/components/seamless-integration-section"));
-const CTASection              = dynamic(() => import("@/components/cta-section"));
-const ITContactSection        = dynamic(() => import("@/components/it-contact-section"));
-const FAQSection              = dynamic(() => import("@/components/faq-section"));
+
 const FooterSection           = dynamic(() => import("@/components/footer-section"));
 
 export const metadata: Metadata = {
@@ -48,10 +43,8 @@ export default function Home() {
       <Divider/>
             <NetworkProcessSection />
 
-      {/* 3 — Challenge Cards (escalating demand, cybersecurity, downtime) */}
       <ChallengeCardsSection />
 
-      {/* 4 — Our Solution (split layout with image) */}
       <SolutionSection />
 
       <CloudServicesSection />

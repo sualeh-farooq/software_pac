@@ -10,7 +10,7 @@ const STATS = [
 export default function StatsSection() {
   return (
     <div className="w-full max-w-[1750px]  mx-auto px-6 md:px-12 xl:px-16 pb-12 md:pb-20" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-      <div className="w-full h-px bg-white/25 mb-8 md:mb-12" />
+      <div className="w-full h-px bg-white/25 mb-8 md:mb-6" />
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-16 text-center">
         {STATS.map((s) => (
           <div key={s.label} className="flex flex-col gap-1">

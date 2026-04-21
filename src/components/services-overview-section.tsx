@@ -66,7 +66,7 @@ function ServiceCard({ svc }: { svc: any }) {
 
       {/* Title */}
       <h3
-        className="text-lg md:text-2xl lg:text-3xl font-bold pt-2 md:pt-4"
+        className="text-[20px] mt-4 md:mt-2  md:text-2xl lg:text-3xl font-bold pt-2 "
         style={{
           background: "linear-gradient(135deg, #C477EA, #6F54F4)",
           WebkitBackgroundClip: "text",
@@ -77,7 +77,7 @@ function ServiceCard({ svc }: { svc: any }) {
       </h3>
 
       {/* Description */}
-      <p className="text-xs md:text-sm lg:text-base text-slate-400 leading-relaxed flex-1 pt-1">
+      <p className="text-xs md:text-sm lg:text-base text-white/90 leading-relaxed flex-1 pt-1">
         {svc.description}
       </p>
 
@@ -119,7 +119,7 @@ style={{
 
 
         {/* Heading */}
-        <h2 className="text-[28px] md:text-5xl lg:text-[52px] text-center font-semibold text-white leading-tight max-w-[1200px] mt-4 md:mt-2 mx-auto">
+        <h2 className="text-[25px] md:text-5xl lg:text-[52px] text-center font-semibold text-white leading-tight max-w-[1200px] mt-4 md:mt-2 mx-auto">
           Comprehensive IT Management
         </h2>
 

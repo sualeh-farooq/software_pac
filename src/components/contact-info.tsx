@@ -29,16 +29,10 @@ const ContactInfo = () => {
 
   const handleSubmit = () => {
     console.log("Form submitted:", formData);
-    setFormData({
-      name: "",
-      email: "",
-      serviceType: "",
-      message: "",
-    });
   };
 
   const inputBase =
-    "w-full bg-transparent text-white text-[15px] outline-none placeholder-[#EBEBEB]  pb-3 pt-2 transition-all duration-300";
+    "w-full bg-transparent text-white text-[15px] outline-none placeholder-[#6b6b8a] pb-3 pt-2 transition-all duration-300";
 
   const lineBase =
     "h-px w-full transition-all duration-500";
@@ -49,7 +43,7 @@ const ContactInfo = () => {
       style={{
         backgroundColor: "#04020f",
         backgroundImage:
-          "radial-gradient(ellipse 600px 600px at 0% 60%, #1a1035 0%, rgba(26,16,53,0.5) 45%, transparent 75%)",
+          "radial-gradient(ellipse 500px 800px at 0% 50%, #1a1035 0%, rgba(26,16,53,0.5) 45%, transparent 75%)",
       }}
     >
       <div className="mx-auto max-w-[760px] px-6 md:px-10">
@@ -60,7 +54,7 @@ const ContactInfo = () => {
             <br />
             Optimize?
           </h2>
-          <p className="text-[15px] md:text-[16px] text-[#EBEBEB] leading-relaxed max-w-md mx-auto">
+          <p className="text-[15px] md:text-[16px] text-[#9d9db8] leading-relaxed max-w-md mx-auto">
             Let us know what challenge you&apos;re facing, and our team will be
             there with a tailored solution for you within 24 hours.
           </p>
@@ -73,7 +67,6 @@ const ContactInfo = () => {
             <input
               type="text"
               name="name"
-            
               placeholder="Name"
               value={formData.name}
               onChange={handleChange}
@@ -87,7 +80,7 @@ const ContactInfo = () => {
                 background:
                   focused === "name"
                     ? "linear-gradient(90deg, #C477EA, #6F54F4)"
-                    : "#EBEBEB",
+                    : "rgba(255,255,255,0.15)",
               }}
             />
           </div>
@@ -110,7 +103,7 @@ const ContactInfo = () => {
                 background:
                   focused === "email"
                     ? "linear-gradient(90deg, #C477EA, #6F54F4)"
-                    : "#EBEBEB",
+                    : "rgba(255,255,255,0.15)",
               }}
             />
           </div>
@@ -121,7 +114,7 @@ const ContactInfo = () => {
               type="button"
               className="w-full flex items-center justify-between pb-3 pt-2 text-[15px] outline-none transition-all duration-300"
               style={{
-                color: formData.serviceType ? "white" : "#EBEBEB",
+                color: formData.serviceType ? "white" : "#6b6b8a",
               }}
               onClick={() => setDropdownOpen(!dropdownOpen)}
               onBlur={() => setTimeout(() => setDropdownOpen(false), 150)}
@@ -152,7 +145,7 @@ const ContactInfo = () => {
               style={{
                 background: dropdownOpen
                   ? "linear-gradient(90deg, #C477EA, #6F54F4)"
-                  : "#EBEBEB",
+                  : "rgba(255,255,255,0.15)",
               }}
             />
 
@@ -217,7 +210,7 @@ const ContactInfo = () => {
                 background:
                   focused === "message"
                     ? "linear-gradient(90deg, #C477EA, #6F54F4)"
-                    : "#EBEBEB",
+                    : "rgba(255,255,255,0.15)",
               }}
             />
           </div>

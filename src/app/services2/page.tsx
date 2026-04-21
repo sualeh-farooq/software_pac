@@ -7,11 +7,11 @@ import icon2 from "../../../public/assets/cybersecurity-icon2.png";
 import icon3 from "../../../public/assets/cybersecurity-icon3.png";
 import ProactiveITSupport from "@/components/ProactiveItSupport";
 import Divider from "@/components/divider";
-import NetworkProcessSection from "@/components/network-process-section";
 import ServiceCommitment from "@/components/service-commitment";
 import StrategySection from "@/components/strategy-section";
 import GradientFooter from "@/components/gradient-footer";
 import serviceimage2 from "../../../public/assets/service2.png";
+import BackBone from "@/components/backbone";
 export const metadata: Metadata = {
   title: "Our Services | SoftwarePac",
   description: "Explore our full range of managed IT, cybersecurity, cloud, and network services.",
@@ -70,7 +70,7 @@ Proactive Monitoring. <br/> Instant Response. Absolute <br/> Peace of Mind.   </
   }
   description={
     <>
- Ensuring 24/7 infrastructure health with proactive monitoring and rapid technical response.    </>
+ Ensuring 24/7 infrastructure health with proactive monitoring and rapid <br/> technical response.    </>
   }
   includes={[
     "Full-Stack Infrastructure Oversight",
@@ -83,7 +83,7 @@ Proactive Monitoring. <br/> Instant Response. Absolute <br/> Peace of Mind.   </
 
 />
 <Divider/>
-<NetworkProcessSection />
+<BackBone />
 <ServiceCommitment/>
 <StrategySection />
 <GradientFooter/>

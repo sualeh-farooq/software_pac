@@ -55,7 +55,7 @@ const STATS = [
 
         {/* Big Quote Card */}
   <div
-  className="relative rounded-2xl overflow-hidden border border-white/30 py-10 flex items-center justify-center"
+  className="relative rounded-2xl overflow-hidden border border-white/30 py-10 mt-10 flex items-center justify-center"
   style={{ backgroundColor: "#0d121b" }}
   data-aos="fade-up"
   data-aos-delay="100"
@@ -86,7 +86,7 @@ const STATS = [
 
       </div>
           <div className="w-full max-w-[1800px] mt-22 mx-auto px-6 md:px-12 xl:px-16 ">
-          <div className="w-full h-px bg-white/30 mb-8 md:mb-12" />
+          <div className="w-full h-px bg-white/30 mb-8 md:mb-6" />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16 text-center">
             {STATS.map((s) => (
               <div key={s.label} className="flex flex-col gap-1">

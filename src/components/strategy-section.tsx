@@ -73,7 +73,7 @@ const StrategySection = () => {
         <div className="flex flex-col justify-between rounded-2xl h-auto md:h-[320px] p-6 md:p-8 bg-[#11161f]">
           <div className="flex flex-col gap-3">
             <h3
-              className="text-[22px] md:text-[30px] font-extrabold leading-snug"
+              className="text-[22px] md:text-[30px] font-extrabold "
               style={{
                 background: "linear-gradient(135deg, #C477EA, #6F54F4)",
                 WebkitBackgroundClip: "text",

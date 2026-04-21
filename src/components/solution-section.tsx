@@ -48,8 +48,8 @@ const SolutionSection = () => {
 
             {/* Body */}
             <p className="text-[14px] md:text-[16px] text-[#EBEBEB] leading-relaxed">
-              We help you harness the full power of cloud computing — delivering
-              flexibility, scalability, and cost-efficiency that positions your business for
+              We help you harness the full power of cloud computing — delivering <br/>
+              flexibility, scalability, and cost-efficiency that positions your business for <br/>
               sustainable growth.
             </p>
 
@@ -90,13 +90,13 @@ const SolutionSection = () => {
           </div>
 
           {/* Right: Image — unchanged */}
-          <div className="relative" data-aos="zoom-in" data-aos-duration="1000">
-            <div className="h-[280px] sm:h-[360px] md:h-[460px] lg:h-[670px] w-full rounded-2xl bg-[#f1f5f9] relative overflow-hidden">
+          <div className="relative" data-aos="zoom-in" data-aos-duration="1000 ">
+            <div className="h-[280px] sm:h-[360px] md:h-[460px] lg:h-[670px] md:mt-0 mt-10 w-full rounded-2xl bg-[#f1f5f9] relative overflow-hidden">
               <Image
                 src={cloud_service}
                 alt="IT monitoring dashboard showing real-time system health metrics"
                 fill
-                className="object-cover rounded-2xl"
+                className="object-cover rounded-2xl "
               />
             </div>
             <div className="absolute -top-4 -right-4 w-24 h-24 rounded-full bg-[#7c5cfc]/10 blur-2xl" />

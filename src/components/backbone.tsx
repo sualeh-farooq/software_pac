@@ -28,13 +28,15 @@ const STEPS = [
   },
 ];
 
-const NetworkProcessSection = () => {
+const BackBone = () => {
   return (
     <section className=" py-16 md:py-24 "
           style={{
     backgroundColor: "#04020f",
-    backgroundImage:
-      "radial-gradient(ellipse 900px 900px at 0% 100%, #221a3f 0%, rgba(34,26,63,0.55) 40%, rgba(34,26,63,0.15) 65%, transparent 80%)",
+           backgroundImage: `
+      radial-gradient(ellipse 1000px 500px at 100% 0%, #221a3f 0%, rgba(34,26,63,0.55) 30%, rgba(34,26,63,0.15) 65%, transparent 80%),
+      radial-gradient(ellipse 1000px 700px at 0% 100%, #221a3f 0%, rgba(34,26,63,0.55) 30%, rgba(34,26,63,0.15) 65%, transparent 80%)
+    `,
   }}>
       <div className="mx-autopx] px-6 lg:px-10">
 
@@ -127,4 +129,4 @@ const NetworkProcessSection = () => {
   );
 };
 
-export default NetworkProcessSection;
+export default BackBone;
