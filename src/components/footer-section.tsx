@@ -9,23 +9,28 @@ const NAV_GROUPS = [
   {
     title: "Services",
     links: [
-      { label: "Managed IT", href: "#" },
-      { label: "Network Infrastructure", href: "#networkinfrastructure" },
-      { label: "Cybersecurity", href: "#cybersecurity" },
-      { label: "Cloud Services", href: "#cloudservices" },
-      { label: "IT Consulting", href: "#consulting" },
+
+      { label: "Managed IT", href: "/services" },
+      { label: "Network Infrastructure", href: "/services1" },
+      { label: "Cybersecurity", href: "/services2" },
+      { label: "Cloud Services", href: "/services3" },
+      { label: "IT Consulting", href: "/services4" },
+      { label: "AI-Enhanced Operations", href: "/services5" },
+                  { label: "Product", href: "/product" },
+
+
     ],
   },
-  {
-    title: "Company",
-    links: [
-      { label: "About Us", href: "#" },
-      { label: "Our Team", href: "#" },
-      { label: "Case Studies", href: "#" },
-      { label: "Blog", href: "#" },
-      { label: "Careers", href: "#" },
-    ],
-  },
+  // {
+  //   title: "Company",
+  //   links: [
+  //     { label: "About Us", href: "#" },
+  //     { label: "Our Team", href: "#" },
+  //     { label: "Case Studies", href: "#" },
+  //     { label: "Blog", href: "#" },
+  //     { label: "Careers", href: "#" },
+  //   ],
+  // },
   {
     title: "Contact",
     links: [
@@ -104,11 +109,11 @@ const FooterSection = () => {
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-0 px-4 md:px-14 pt-6 pb-4 md:pb-0 text-sm text-white/80">
           <p>© {new Date().getFullYear()} SoftwarePac. All rights reserved.</p>
-          <div className="flex gap-14">
+          {/* <div className="flex gap-14">
             <Link href="#" className="hover:text-white transition-colors">Privacy</Link>
             <Link href="#" className="hover:text-white transition-colors">Terms</Link>
             <Link href="#" className="hover:text-white transition-colors">Cookies</Link>
-          </div>
+          </div> */}
         </div>
       </div>
 
